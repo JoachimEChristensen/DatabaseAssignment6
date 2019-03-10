@@ -52,7 +52,7 @@ Execution plan <br/>
 ![Excercise3b](/img/Excercise3b.png)<br/>
 
 #### Difference
-Compare both execution plan, we can assume that query cost of windowing at increase a lot, almost 400%. The reason for why the query cost are big can be that SUM() function in OVER clause not only return the total sales for each office, but also the result in each rows, which means total number of rows will be showing in output. <br/> In solution B, we use the SELECT DISTINCT to limit the output, so we don't get any duplicate rows. If you remove it, you can see the 'real' output.
+Compare both execution plan, we can assume that query cost of windowing at increase a lot, almost 400%. The reason for why the query cost are big can be that SUM() function in OVER clause not only return the total sales for each office, but also the result in each rows, which means total number of rows will be showing in output. <br/> In solution B, we add the SELECT DISTINCT, so we don't get any duplicate rows. If you remove it, you can see the 'real' output.
 
 ### Excercise 4
 #### ***1. Using display name and join***
