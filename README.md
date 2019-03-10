@@ -1,7 +1,7 @@
 # DatabaseAssignment6
 
 ## Before all
-Make sure that you have all the database this assignment needed i.e., classicmodels and coffee.stackexchange.com or askubuntu.com. If you do not have them, please refer to assignment 4 and 5 to get them.
+Make sure that you have all the databases this assignment needed i.e., classicmodels and coffee.stackexchange.com or askubuntu.com. If you do not have them, please refer to assignment 4 and 5 to get them.
 
 ## Excercises
 More details about the code are described in 'Assignment_06_Excercises.sql' file.
