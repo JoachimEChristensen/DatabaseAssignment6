@@ -1,4 +1,4 @@
--- First 3 excercises are using 'classicmodels' database
+-- First three excercises are using 'classicmodels' database
 
 /* Excercise 1
 In the classicmodels database, write a query that picks out those customers who are in the same city as office of their sales representative. 
@@ -34,6 +34,8 @@ left join employees on offices.officeCode = employees.officeCode
 left join customers on employees.employeeNumber = customers.salesRepEmployeeNumber
 left join payments on customers.customerNumber = payments.customerNumber;
 
+
+-- Rest two excercises are using datasets from last assignment i.e., coffee.stackexchange.com or askubuntu.com.
 /* Excercise 4
 In the stackexchange forum for coffee (coffee.stackexchange.com), write a query which return the displayName and title of all posts which with the word grounds in the title.
 */
