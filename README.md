@@ -92,4 +92,4 @@ where match(posts.Title) against('%grounds%');
 ```
 Execution plan <br/>
 ![Excercise5](/img/Excercise5.png)<br/>
-For this assignment we don't need "boolean" full-text search, but for more advanced searches it would be very useful.
+We have decided that "boolean" full-text search ain't necessary for this assignment, but for more advanced searches it would be very useful.
