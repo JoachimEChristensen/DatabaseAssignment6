@@ -7,7 +7,7 @@ Make sure that you have all the databases this assignment needed i.e., classicmo
 More details about the code are described in 'Assignment_06_Excercises.sql' file.
 ### Excercise 1
 Query
-```
+```mysql
 select customers.* 
 from customers 
 left join employees on customers.salesRepEmployeeNumber = employees.employeeNumber
@@ -26,7 +26,7 @@ We can clearly see that query cost are reduced by almost 80% (39,79 -->>> 7,24),
 ### Excercise 3
 #### ***A. Using grouping***
 Query
-```
+```mysql
 select sum(payments.amount) as 'sold for', max(payments.amount) as 'max payment', offices.city
 from offices
 left join employees on offices.officeCode = employees.officeCode
@@ -39,7 +39,7 @@ Execution plan <br/>
 
 #### ***B. Using windowing***
 Query
-```
+```mysql
 select DISTINCT offices.city,
 sum(payments.amount) OVER (PARTITION BY offices.officeCode) as 'sold for',
 max(payments.amount) OVER (PARTITION BY offices.officeCode) as 'max payment'
@@ -57,7 +57,7 @@ Compare both execution plan, we can assume that query cost of windowing at incre
 ### Excercise 4
 #### ***1. Using display name and join***
 Query
-```
+```mysql
 select users.DisplayName, posts.Title 
 from posts 
 left join users on posts.OwnerUserId = users.Id 
@@ -68,7 +68,7 @@ Execution plan <br/>
 
 #### ***2. Using userid and without join***
 Query
-```
+```mysql
 select Id, Title 
 from posts
 where posts.Title like '%grounds%';
@@ -81,7 +81,7 @@ By comparing both execution plan, we can clearly see that query cost of no join 
 
 ### Excercise 5
 Query
-```
+```mysql
 ALTER TABLE posts 
 ADD FULLTEXT(Title);
 
